@@ -8,9 +8,12 @@ class LowBalanceException extends Exception{
 }
 
 public class UserDefinedException {
+    public static int balance=9000;
     static void fun1(){
         try{
-           throw new LowBalanceException();
+            if(balance<=5000){
+                throw new LowBalanceException();
+            }
         }catch(LowBalanceException e){
             System.out.println(e);
         }
