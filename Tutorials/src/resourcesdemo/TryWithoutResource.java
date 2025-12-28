@@ -10,7 +10,7 @@ public class TryWithoutResource {
     static void Divide() throws FileNotFoundException{
 
         try{
-            f=new FileInputStream("C:\\Users\\Admin\\Desktop\\JAVA\\Tutorials\\src\\resourcesdemo\\Test.txt");
+            f=new FileInputStream("C:\\Users\\Admin\\Desktop\\Java-tutorial\\Tutorials\\src\\resourcesdemo\\Test.txt");
             sc=new Scanner(f);
             int a=sc.nextInt();
             int b=sc.nextInt();
@@ -18,7 +18,7 @@ public class TryWithoutResource {
         }
         finally {
             try{
-                f.close();
+                f.close(); //Checked Exception: Must be handled
                 sc.close();
             }
             catch(Exception e){
