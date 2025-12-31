@@ -37,8 +37,8 @@ class MyThread_2 extends Thread{
 public class ThreadTest_10 {
     public static void main(String[] args) {
         MyData my=new MyData();
-        MyThread_1 t1=new MyThread_1(my);
-        MyThread_2 t2=new MyThread_2(my);
+        MyThread_1 t1=new MyThread_1(my); //passing reference of MyData class to MyThread_1 class so that MyThread_1 can access display()
+        MyThread_2 t2=new MyThread_2(my);//passing reference of MyData class to MyThread_2 class so that MyThread_2 can access display()
         t1.start();
         t2.start();
     }
