@@ -1,0 +1,23 @@
+package fileexample;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class demo_3 {
+    public static void main(String[] args) {
+        try{
+            FileOutputStream fos=new FileOutputStream("C:\\Users\\Admin\\Desktop\\Java-tutorial\\Tutorials\\src\\fileexample\\test_1");
+            String str="Java is Programming language";
+            byte b[]= str.getBytes();
+            fos.write(b,6,str.length()-6);
+            fos.close();
+        }
+        catch(FileNotFoundException e){
+            System.out.println(e);
+        }
+        catch(IOException e){
+            System.out.println(e);
+        }
+    }
+}
+
