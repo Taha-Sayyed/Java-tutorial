@@ -1,4 +1,4 @@
-package fileexample.CharacterSTreamClass;
+package fileexample.CharacterSTreamClass.FileReaderWriter;
 import java.io.FileReader;
 public class demo_2 {
     public static void main(String[] args) {

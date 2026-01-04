@@ -1,4 +1,4 @@
-package fileexample.CharacterSTreamClass;
+package fileexample.CharacterSTreamClass.FileReaderWriter;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
