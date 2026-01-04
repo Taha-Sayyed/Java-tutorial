@@ -1,4 +1,4 @@
-package fileexample.ByteStreamClass.ByteArrayInputOutputStream;
+package fileexample.CharacterSTreamClass.CharArrayReaderWriter;
 import java.io.CharArrayReader;
 
 public class demo_5 {
