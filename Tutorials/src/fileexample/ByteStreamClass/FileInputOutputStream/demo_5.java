@@ -1,15 +1,15 @@
-package fileexample.ByteStreamClass;
+package fileexample.ByteStreamClass.FileInputOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class demo_6 {
+public class demo_5 {
     public static void main(String[] args) {
         try(FileInputStream fis=new FileInputStream("C:\\Users\\Admin\\Desktop\\Java-tutorial\\Tutorials\\src\\fileexample\\test_1")){
-            int x=fis.read(); //read only one byte
-            while(x!=-1){
-                System.out.print((char)x);
-                x=fis.read();
-            }
+            byte b[]=new byte[fis.available()];
+            fis.read(b);
+            String str=new String(b);
+            System.out.println(str);
+
         }
         catch(IOException e){
             System.out.println(e);
