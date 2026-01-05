@@ -11,7 +11,8 @@ public class demo_1 {
         System.out.println(fs.isFile());
         File file[]=fs.listFiles();
         for(File x:file){
-            System.out.println(x);
+            System.out.println(x.getName());
+            System.out.println(x.getPath());
         }
     }
 }
