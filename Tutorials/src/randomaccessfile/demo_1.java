@@ -1,11 +1,10 @@
-package fileexample.ByteStreamClass.randomaccessfile;
+package randomaccessfile;
 
 import java.io.RandomAccessFile;
-import java.security.spec.ECField;
 
 public class demo_1 {
     public static void main(String[] args) throws Exception {
-        RandomAccessFile rf=new RandomAccessFile("C:\\Users\\Admin\\Desktop\\Java-tutorial\\Tutorials\\src\\fileexample\\ByteStreamClass\\randomaccessfile\\test","rw");
+        RandomAccessFile rf=new RandomAccessFile("C:\\Users\\Admin\\Desktop\\Java-tutorial\\Tutorials\\src\\randomaccessfile\\test","rw");
         System.out.println((char)rf.read());
         System.out.println((char)rf.read());
         System.out.println((char)rf.read());
