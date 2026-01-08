@@ -1,9 +1,9 @@
 package Generics.GenericsBounds;
 
-class MyArray<T>{
+class MyArray1<T>{
     T data[];
     private int length;
-    public MyArray(int size){
+    public MyArray1(int size){
         data=(T[])new Object[size];
         length=0;
     }
@@ -23,7 +23,7 @@ class MyArray<T>{
 public class GenericDemo1 {
 
     public static void main(String[] args) {
-        MyArray ma=new MyArray(3);
+        MyArray1 ma=new MyArray1(3);
         ma.append("Hello");
         ma.append(new Integer(10));
         ma.display();
